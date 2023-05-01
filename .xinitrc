@@ -16,6 +16,9 @@ sxhkd &
 # transparency
 picom &
 
+# hide cursor
+unclutter &
+
 # suckless
 slstatus &
 dwm

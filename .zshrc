@@ -60,6 +60,9 @@ lfcd () {
   fi
 }
 bindkey -s '^r' 'lfcd\n'
+
+# run rust project
+bindkey -s '^f' 'cargo run\n'
 #
 # delete backward word
 my-backward-delete-word() {
