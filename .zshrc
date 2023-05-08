@@ -3,6 +3,9 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   startx
 fi
 
+# when attempting to auto-fill with tab, ignore the capitalisation
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -49,6 +52,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
   tmp="$(mktemp)"
@@ -60,9 +64,16 @@ lfcd () {
   fi
 }
 bindkey -s '^r' 'lfcd\n'
+#
+# rustproj () {
+#   st &
+#   nvim src/main.rs
+# }
+#
+# bindkey -s '^g' 'rustproj\n'
 
 # run rust project
-bindkey -s '^f' 'cargo run\n'
+bindkey -s '^f' 'go run Main.go\n'
 #
 # delete backward word
 my-backward-delete-word() {
@@ -76,7 +87,15 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# variables
+export GOPATH=/home/nora/golib
+export PATH=$PATH:$GOPATH/bin
+
 # aliases
+alias rm=trash-put
+# alias 'rm -rf'='rm -rf'
+alias relo='source ~/.zshrc'
 alias v=nvim
 alias spac='sudo pacman -S --needed --noconfirm'
 alias spa='sudo pacman'
@@ -87,3 +106,6 @@ alias psls='sudo ps_mem'
 alias chad='cd ~/.config/nvim/lua/custom; git pull'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias xclip='xclip -selection clipboard'
+alias cdbuild='cd Documents/build; lfcd'
+alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
+alias cdpro='cd ~/Documents/programming/; lfcd'
