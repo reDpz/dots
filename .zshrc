@@ -91,6 +91,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # variables
 export GOPATH=/home/nora/golib
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/home/nora/.local/bin
 
 # aliases
 alias rm=trash-put
@@ -109,3 +110,7 @@ alias xclip='xclip -selection clipboard'
 alias cdbuild='cd Documents/build; lfcd'
 alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
+
+
+# auto starts
+fastfetch
