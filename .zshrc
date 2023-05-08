@@ -1,6 +1,8 @@
 # start x
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   startx
+else
+  fastfetch
 fi
 
 # when attempting to auto-fill with tab, ignore the capitalisation
@@ -112,5 +114,3 @@ alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
 
 
-# auto starts
-fastfetch
