@@ -98,7 +98,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/home/nora/.local/bin
 
 # aliases
-alias rm=trash-put
+# alias rm=trash-put
 # alias 'rm -rf'='rm -rf'
 alias relo='source ~/.zshrc'
 alias v=nvim
@@ -115,4 +115,3 @@ alias cdbuild='cd Documents/build; lfcd'
 alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
 alias fetch=fastfetch
-

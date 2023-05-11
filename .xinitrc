@@ -8,7 +8,7 @@ xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --pos 1920x0 --output 
 xmousepasteblock &
 
 # background
-feh --bg-scale ~/Pictures/wallpapers/ALLqk82.png &
+feh --bg-scale ~/Pictures/wallpapers/gruvbox_image40.png &
 
 # keybindings
 sxhkd &
