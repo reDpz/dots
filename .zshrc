@@ -114,4 +114,6 @@ alias xclip='xclip -selection clipboard'
 alias cdbuild='cd Documents/build; lfcd'
 alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
+alias cdnotes='cd ~/Documents/Notes/; lfcd'
 alias fetch=fastfetch
+alias wiki='cd ~/Documents/Notes/; nvim index.wiki'
