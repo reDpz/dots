@@ -20,7 +20,7 @@ picom &
 unclutter &
 
 # sync files
-syncthing &
+syncthing serve --no-browser&
 
 # suckless
 slstatus &
