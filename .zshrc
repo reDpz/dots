@@ -117,3 +117,4 @@ alias cdpro='cd ~/Documents/programming/; lfcd'
 alias cdnotes='cd ~/Documents/Notes/; lfcd'
 alias fetch=fastfetch
 alias wiki='cd ~/Documents/Notes/wiki; nvim index.wiki'
+alias cdgo="lfcd /home/nora/Documents/programming/go/src/github.com/reDpz"

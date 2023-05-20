@@ -2,7 +2,7 @@
 pulseaudio &
 
 # set monitor positions
-xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --pos 1920x0 --output HDMI-A-0 --mode 1920x1080 --rate 60 --pos 0x0 &
+xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --output HDMI-A-0 --mode 1920x1080 --rate 60 --left-of DisplayPort-0
 
 # block pastes with middle mouse button
 xmousepasteblock &
@@ -20,8 +20,11 @@ picom &
 unclutter &
 
 # sync files
-syncthing serve --no-browser&
+syncthing serve --no-browser &
 
 # suckless
-slstatus &
-dwm
+# slstatus &
+# dwm
+
+# wm
+bspwm
