@@ -1,0 +1,11 @@
+super + w
+  connman-gtk
+super + s
+  flameshot gui
+
+super + e
+  st -e 'lfcd'
+
+
+super + Return
+  st

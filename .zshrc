@@ -1,9 +1,9 @@
 # start x
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   startx
-# else
+else
 # uncomment else statement then put things here to autostart.
-  # fastfetch
+  clear
 fi
 
 # when attempting to auto-fill with tab, ignore the capitalisation
