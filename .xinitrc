@@ -8,7 +8,7 @@ xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --output HDMI-A-0 --mo
 xmousepasteblock &
 
 # background
-feh --bg-scale ~/Pictures/wallpapers/gruvbox_pixel.png &
+feh --bg-fill ~/Pictures/wallpapers/wall_secondary.png &
 
 # keybindings
 sxhkd &
@@ -23,8 +23,12 @@ unclutter &
 syncthing serve --no-browser &
 
 # suckless
-# slstatus &
-# dwm
+slstatus &
+dwm
 
 # wm
-bspwm
+# bspwm
+# ~/.config/polybar/launch.sh &
+# leftwm
+# polybar primary &
+# polybar secondary &
