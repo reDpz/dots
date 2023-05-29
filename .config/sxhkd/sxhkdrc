@@ -3,3 +3,8 @@ super + w
 super + s
   flameshot gui
 
+alt + shift + d
+  lobster --dmenu
+
+super + shift + p
+  loginctl kill-session $XDG_SESSION_ID

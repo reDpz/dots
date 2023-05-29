@@ -41,7 +41,7 @@ _comp_options+=(globdots)
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto -a'
+alias ls='lsd -a'
 alias grep='grep --color=auto'
 # PS1='[\u@\h \W]\$ '
 

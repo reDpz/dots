@@ -8,7 +8,7 @@ xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144 --output HDMI-A-0 --mo
 xmousepasteblock &
 
 # background
-feh --bg-fill ~/Pictures/wallpapers/wall_secondary.png &
+feh --bg-fill ~/Pictures/wallpapers/gruvbox_image46.png &
 
 # keybindings
 sxhkd &
