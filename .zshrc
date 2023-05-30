@@ -85,6 +85,7 @@ my-backward-delete-word() {
 }
 zle -N my-backward-delete-word
 bindkey '^W' my-backward-delete-word
+
 # p10k
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -111,7 +112,7 @@ alias psls='sudo ps_mem'
 alias chad='cd ~/.config/nvim/lua/custom; git pull'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias xclip='xclip -selection clipboard'
-alias cdbuild='cd Documents/build; lfcd'
+alias cdbuild='cd ~/Documents/build; lfcd'
 alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
 alias cdnotes='cd ~/Documents/Notes/; lfcd'
