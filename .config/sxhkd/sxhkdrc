@@ -8,3 +8,10 @@ alt + shift + d
 
 super + shift + p
   loginctl kill-session $XDG_SESSION_ID
+
+XF86AudioPlay
+  playerctl play-pause
+
+# reload config
+super + shift + x
+	pkill -USR1 -x sxhkd
