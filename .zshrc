@@ -86,6 +86,7 @@ my-backward-delete-word() {
 zle -N my-backward-delete-word
 bindkey '^W' my-backward-delete-word
 
+
 # p10k
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -117,5 +118,7 @@ alias astro='cd /home/nora/.config/nvim/lua/user; git pull'
 alias cdpro='cd ~/Documents/programming/; lfcd'
 alias cdnotes='cd ~/Documents/Notes/; lfcd'
 alias fetch=fastfetch
+alias cdwi='cd ~/Documents/Notes/wiki;'
 alias wiki='cd ~/Documents/Notes/wiki; nvim index.wiki'
 alias cdgo="lfcd /home/nora/Documents/programming/go/src/github.com/reDpz"
+alias nvimp='cd ~/.config/nvim/lua'

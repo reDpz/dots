@@ -3,7 +3,7 @@ super + w
 super + s
   flameshot gui
 
-alt + shift + d
+super + shift + d
   lobster --dmenu
 
 super + shift + p
