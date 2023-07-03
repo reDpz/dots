@@ -29,10 +29,10 @@ set statusbar-fg                "#ebdbb2" # fg
 set highlight-color             "#fabd2f" # bright:yellow
 set highlight-active-color      "#fe8019" # bright:orange
 
-set default-bg                  rgba(28,28,28,0.3)
+set default-bg                  rgba(28,28,28,0.52)
 set default-fg                  "#ebdbb2" # fg
 set render-loading              true
-set render-loading-bg           rgba(28,28,28,0.7)
+set render-loading-bg           rgba(28,28,28,0)
 set render-loading-fg           "#ebdbb2" # fg
 
 # Recolor book content's color

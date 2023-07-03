@@ -15,3 +15,8 @@ XF86AudioPlay
 # reload config
 super + shift + x
 	pkill -USR1 -x sxhkd
+
+# task manager
+
+control + shift + mode_switch
+	alacritty -e btop
